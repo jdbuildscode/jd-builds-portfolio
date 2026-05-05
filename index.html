@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Builds — Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-logo">JD Builds</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">JD Builds</h1>
+        <h2 class="hero-title">Frontend Developer</h2>
+        <p class="hero-description">
+          Building modern web experiences from scratch.
+          Currently on a 6 month journey from zero to 
+          remote developer.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" id="days-count">0</span>
+            <span class="stat-label">Days Coding</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Apps Deployed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I started coding from absolute zero in April 2026 
+              with one goal — land a remote frontend developer 
+              job by July 2026.
+            </p>
+            <p>
+              Every single day I write code, push to GitHub, 
+              and build in public. No shortcuts. No excuses.
+            </p>
+            <p>
+              I believe consistency beats talent. 
+              I show up every day and let the work speak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-card learned">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <span class="skill-status">Learned</span>
+          </div>
+
+          <div class="skill-card learned">
+            <div class="skill-icon">🎨</div>
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-status">Learned</span>
+          </div>
+
+          <div class="skill-card learned">
+            <div class="skill-icon">📐</div>
+            <h3>Flexbox</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <span class="skill-status">Learned</span>
+          </div>
+
+          <div class="skill-card in-progress">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 35%"></div>
+            </div>
+            <span class="skill-status">In Progress</span>
+          </div>
+
+          <div class="skill-card coming-soon">
+            <div class="skill-icon">⚛️</div>
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 0%"></div>
+            </div>
+            <span class="skill-status">Coming Soon</span>
+          </div>
+
+          <div class="skill-card coming-soon">
+            <div class="skill-icon">🔷</div>
+            <h3>TypeScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 0%"></div>
+            </div>
+            <span class="skill-status">Coming Soon</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-number">01</span>
+              <div class="project-links">
+                <a href="https://github.com/jdbuildscode" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h3>Todo App</h3>
+            <p>A fully functional todo app with localStorage persistence. Add, complete, filter and delete tasks.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://visionary-druid-711fde.netlify.app" target="_blank" class="project-live">View Live →</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-number">02</span>
+              <div class="project-links">
+                <a href="https://github.com/jdbuildscode" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h3>JS Logic Dashboard</h3>
+            <p>Interactive dashboard showing JavaScript arrays, loops and conditions with real time filtering.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://github.com/jdbuildscode/day-07-logic" target="_blank" class="project-live">View Code →</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span class="project-number">03</span>
+              <div class="project-links">
+                <a href="https://github.com/jdbuildscode" target="_blank">GitHub</a>
+              </div>
+            </div>
+            <h3>Animated Cards UI</h3>
+            <p>Professional card components with CSS transitions, hover effects, transforms and box shadows.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Flexbox</span>
+            </div>
+            <a href="https://github.com/jdbuildscode/day-04-transitions-hover" target="_blank" class="project-live">View Code →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-description">
+          Open to remote frontend opportunities and freelance projects.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/jdbuildscode" target="_blank" class="contact-link">
+            <span>🐙</span> GitHub
+          </a>
+          <a href="https://x.com/jdbuildscode" target="_blank" class="contact-link">
+            <span>🐦</span> X / Twitter
+          </a>
+          <a href="mailto:jdbuildscode@gmail.com" class="contact-link">
+            <span>📧</span> Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Built by JD Builds — Day by day. Commit by commit.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
